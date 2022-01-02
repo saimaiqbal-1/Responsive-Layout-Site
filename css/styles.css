@@ -1,0 +1,139 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+	font-size: 1.2em;
+	text-align: center;
+}
+h2,
+h3,
+a {
+	color: #000000;
+}
+h2,
+h3 {
+	margin-top: 0;
+    text-align: center;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+
+.nav li {
+        border-radius: 0px;
+        display: block;
+        background: #ffffff;
+        color: #000000;
+        padding: 10px 10px;
+        margin: 10px;
+        text-transform: uppercase;
+}
+body h1 {
+    text-align: center;
+	font-size: 2em;
+	margin: 0;
+    color: #000000;
+    background: #f2f5f4;
+    font-family: 'Roboto', sans-serif;
+}
+.main-nav {
+	margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f2f5f4;
+    font-size: 1.25em;
+}
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+.main-nav a:hover {
+	color: #13bcc2;
+}
+
+/* ---- Layout Containers ---- */
+.title, .main {
+    background-color: #ffffff;
+    padding: 2em;
+}
+
+.profile-image {
+    display: block;
+    margin: auto;
+    padding: 40px 15px;
+}
+
+.main-header {
+	padding-top: 1em;
+	padding-bottom: 1em;
+    background: #f2f5f4;
+}
+.main-footer {
+	text-align: center;
+}
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+.main-footer {
+	background: #f2f5f4;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+
+.paragraph1 {
+	margin-bottom: 0;
+}
+.image h2 {
+	margin: auto;
+    padding: 1em;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+	.main-header,
+	.main {
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+}
+@media (min-width: 1025px) {
+	.main-header,
+	.main {
+		width: 80%;
+		max-width: 1150px;
+	}
+}

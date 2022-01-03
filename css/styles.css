@@ -17,24 +17,40 @@ ul {
   list-style: none;
 }
 p {
-	font-size: 1.2em;
+	font-size: 1em;
 	text-align: center;
+	margin: 10px 10px;
 }
 h2,
 h3,
 a {
 	color: #000000;
 }
-h2,
 h3 {
+	
+	margin-top: 20px;
+	font-size: 1em;
+	font-family: 'Roboto', sans-serif;
+}
+h2 {
 	margin-top: 0;
     text-align: center;
 }
+
+
 a {
 	text-decoration: none;
 }
 img {
 	max-width: 100%;
+	padding: 20px 10px;
+}
+
+hr {
+	margin: 20px 20px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	opacity: .3;
 }
 
 /* ================================= 
@@ -49,14 +65,14 @@ img {
         display: block;
         background: #ffffff;
         color: #000000;
-        padding: 10px 10px;
-        margin: 10px;
+        padding: 0px 10px;
+        margin: 5px 0;
         text-transform: uppercase;
 }
 body h1 {
     text-align: center;
 	font-size: 2em;
-	margin: 0;
+	margin: 15px 0;
     color: #000000;
     background: #f2f5f4;
     font-family: 'Roboto', sans-serif;
@@ -65,28 +81,43 @@ body h1 {
 	margin-top: 0;
     font-family: 'Roboto', sans-serif;
     background: #f2f5f4;
-    font-size: 1.25em;
+    font-size: 1.1em;
+	padding: 10px 10px;
 }
 .main-nav a {
 	text-align: center;
 	display: block;
-	padding: 10px 15px;
+	padding: 10px 25px;
 }
 
 .main-nav a:hover {
 	color: #13bcc2;
 }
 
+.nav-list {
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Roboto', sans-serif;
+	padding: 10px 0px;
+}
+
+.footer-nav {
+	margin: 0px 10px;
+}
+  
+
 /* ---- Layout Containers ---- */
 .title, .main {
     background-color: #ffffff;
-    padding: 2em;
+    padding: 10px 10px;
+	font-size: 1em;
+	
 }
 
 .profile-image {
     display: block;
     margin: auto;
-    padding: 40px 15px;
+    padding: 30px 50px;
 }
 
 .main-header {
@@ -96,27 +127,35 @@ body h1 {
 }
 .main-footer {
 	text-align: center;
+	background: #f2f5f4;
+	padding: 30px 0;
+	margin-top: 30px;
+	margin-bottom: 0;
 }
 .col {
 	padding-right: 1em;
 	padding-left: 1em;
 }
-.main-footer {
-	background: #f2f5f4;
-	padding: 2em 0;
-	margin-top: 30px;
+
+
+.main-footer p {
+	padding: 5px 10px;
 }
 
 /* ---- Page Elements ---- */
 
 
-.paragraph1 {
-	margin-bottom: 0;
-}
-.image h2 {
+.image h2 p {
 	margin: auto;
     padding: 1em;
+	font-size: .75em;
 }
+
+.image h2 {
+	font-size: 1.2em;
+	
+}
+
 
 /* ================================= 
   Media Queries

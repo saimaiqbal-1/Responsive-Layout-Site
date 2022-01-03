@@ -162,17 +162,79 @@ body h1 {
 ==================================== */
 
 @media (min-width: 768px) {
-	.main-header,
-	.main {
-		width: 90%;
-		margin: 0 auto;
+	h1 {
+		Justify-content: center;
+		Align-items: center;
 	}
+	 .main-nav   {
+		 display: flex;
+		 flex-direction: column;
+	 }
+	 .nav {
+		 display: flex;
+		 flex-direction: row;
+		 Justify-content: center;
 	
+	 }
+	 .nav li {
+		background: #f2f5f4;
+		margin: 0;
+	 }
+	.profile-image  {
+		width: 40%;
+		padding: 0;
+	 }
+	 .main-header {
+		 display: flex;
+		 padding: 50px 20px;
+	 }
+	 .paragraph1 {
+		order: -1;
+		 display: flex;
+		 flex-grow: 1;
+		 text-align: left;
+		 font-size: 1.2em;
+	 }
+	 .main {
+		 display: flex;
+		 flex-direction: row;
+		 Flex-wrap: wrap;
+	 }
+	 .image {
+		 width: 50%;
+	 }
+	 .main-footer {
+		 display: flex;
+		 flex-direction: column;
+	 }
+	 .main-footer p {
+		 padding: 0 160px;
+	 }
 }
-@media (min-width: 1025px) {
-	.main-header,
-	.main {
-		width: 80%;
-		max-width: 1150px;
+
+
+
+@media (min-width: 1024px) {
+	.main-nav   {
+		display: flex;
+		flex-direction: row;
+		padding: 20px 30px;
+		align-items: center;
+	}
+	.nav {
+
+	}
+	.student {
+		margin-right: auto;
+	}
+	.main-header {
+		display: flex;
+		padding: 40px 20px;
+		align-items: flex-start;
+	}
+	.paragraph1 {
+		padding: 0 50px;
+		margin: 0;
+		font-size: 1.5em;
 	}
 }

@@ -120,6 +120,10 @@ body h1 {
     padding: 30px 50px;
 }
 
+.paragraph1 {
+	color:#6774ee;
+}
+
 .main-header {
 	padding-top: 1em;
 	padding-bottom: 1em;
@@ -144,7 +148,9 @@ body h1 {
 
 /* ---- Page Elements ---- */
 
-
+.image:hover {
+	opacity: 70%;
+}
 .image h2 p {
 	margin: auto;
     padding: 1em;
@@ -153,13 +159,43 @@ body h1 {
 
 .image h2 {
 	font-size: 1.2em;
-	
 }
+
+.skills-img {
+	display: block;
+    margin: auto;
+}
+
+ul.skills {
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+  }
+  
+  .skills li {
+	border-radius: 50px;
+	display: block;
+	background: rgb(50, 19, 224);
+	color: white;
+	padding: 10px 10px;
+	margin: 15px auto;
+	max-width: 30%;
+  }
 
 
 /* ================================= 
   Media Queries
 ==================================== */
+@media (min-width: 320px) {
+	.home {
+		display: none;
+	}
+	.portfolio {
+		display: none;
+	}
+	.contact {
+		display: none;
+	}
 
 @media (min-width: 768px) {
 	h1 {
@@ -174,7 +210,6 @@ body h1 {
 		 display: flex;
 		 flex-direction: row;
 		 Justify-content: center;
-	
 	 }
 	 .nav li {
 		background: #f2f5f4;
@@ -182,11 +217,12 @@ body h1 {
 	 }
 	.profile-image  {
 		width: 40%;
-		padding: 0;
+		padding: 50px 0;
 	 }
 	 .main-header {
 		 display: flex;
-		 padding: 50px 20px;
+		 padding: 0;
+		 margin: 0;
 	 }
 	 .paragraph1 {
 		order: -1;
@@ -194,6 +230,8 @@ body h1 {
 		 flex-grow: 1;
 		 text-align: left;
 		 font-size: 1.2em;
+		 padding: 10px 20px;
+		 margin: 40px 0 0;
 	 }
 	 .main {
 		 display: flex;
@@ -208,8 +246,30 @@ body h1 {
 		 flex-direction: column;
 	 }
 	 .main-footer p {
-		 padding: 0 160px;
+		 padding: 0 130px;
 	 }
+	 p {
+		 margin: 10px 45px;
+	 }
+	 .top {
+		 display: none;
+	 }
+	 .home, .portfolio, .contact, .footer-nav {
+		display: flex;
+		flex-direction: column;
+	}
+	.nav-list {
+		display: flex;
+		Justify-content: space-between;
+		align-items: center;
+	}
+	.nav-item {
+		margin-right: auto;
+	}
+	.nav-list a {
+		padding: 0 20px;
+	}
+	
 }
 
 
@@ -221,20 +281,62 @@ body h1 {
 		padding: 20px 30px;
 		align-items: center;
 	}
-	.nav {
-
+	.main-nav a {
+		padding: 0;
 	}
 	.student {
 		margin-right: auto;
 	}
 	.main-header {
 		display: flex;
-		padding: 40px 20px;
+		padding: 0 10px 40px 0;
 		align-items: flex-start;
 	}
 	.paragraph1 {
-		padding: 0 50px;
-		margin: 0;
-		font-size: 1.5em;
+		margin: 10px 10px;
+		font-size: 1.4em;
+	}
+	.profile-image  {
+		width: 50%;
+		padding: 0 10px 10px 0;
+	 }
+	 .main {
+		 display: flex;
+		 align-items: center;
+		 Justify-content: center;
+	 }
+	 p {
+		 margin: 10px;
+	 }
+	 .image {
+		width: 30%;
+	}
+	.main-footer {
+		padding: 10px 10px 0;
+	}
+	.main-footer p {
+		padding: 0 280px;
+	}
+	.footer-nav {
+		display: flex;
+		flex-direction: column;
+	}
+	.nav-list {
+		display: flex;
+		Justify-content: space-between;
+		align-items: center;
+		padding: 0;
+	}
+	.top {
+		display: none;
+	}
+	.nav-item {
+		margin-right: auto;
+	}
+	.nav-list a {
+		padding: 10px 20px;
+	}
+	.paragraph2 {
+		padding: 5px 150px;
 	}
 }

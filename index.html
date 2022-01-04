@@ -16,8 +16,9 @@
         <h1 class="student">Student Name</h1>
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio/index.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#link1">Portfolio</a></li>
+          <li><a href="#link2">Contact</a></li>
+          <li><a href="#link3">Skills</a></li>
         </ul>
      </nav>
      
@@ -27,7 +28,7 @@
       <p class="paragraph1">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
     </header>
 
-    <h1 class="title">PORTFOLIO</h1>
+    <h1 class="title" id="link1">PORTFOLIO</h1>
     <main class="main">
         
         <div class="image">
@@ -67,10 +68,24 @@
           </div> 
      </main>
 
+     <hr>
+
+     <section>
+        <h1 class="title" id="link3">Skills</h2>
+          <img src="images/skills.jpg" alt="Web Developer sitting at a desk developing websites on laptop" class="skills-img">
+        <p class="paragraph2">I create successful websites that are fast, easy to use, and built with best practices. I use the following languages to produce responsive websites and web apps that provide users the best experience suited to their device and browser:</p>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+        </ul>
+      </section>
+
     
 
      <footer class="main-footer">
-         <h3>CONTACT</h3>
+         <h3 id="link2">CONTACT</h3>
          <p class="foot-p">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
         <p>Phone &nbsp &nbsp<strong>+1 (111) 555-1234</strong></p>
         <p>Email &nbsp &nbsp <strong>email@yoursite.com</strong></p>
@@ -80,7 +95,11 @@
         <nav class="footer-nav">
             <ul class="nav-list">
               <li class="nav-item">Student name</li>
-              <li ><a href="#">BACK TO TOP</a></li>
+              <li class="top"><a href="#">BACK TO TOP</a></li>
+              <li class="home"><a href="index.html">HOME</a></li>
+              <li class="portfolio"><a href="#link1">PORTFOLIO</a></li>
+              <li class="contact"><a href="#link2">CONTACT</a></li>
+              <li class="contact"><a href="#link3">SKILLS</a></li>
          </nav>
       </footer>
     </body>

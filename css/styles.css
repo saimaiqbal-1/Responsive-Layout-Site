@@ -105,6 +105,15 @@ body h1 {
 	margin: 0px 10px;
 }
   
+.home {
+	display: none;
+}
+.portfolio {
+	display: none;
+}
+.contact {
+	display: none;
+}
 
 /* ---- Layout Containers ---- */
 .title, .main {
@@ -186,17 +195,6 @@ ul.skills {
 /* ================================= 
   Media Queries
 ==================================== */
-@media (min-width: 320px) {
-	.home {
-		display: none;
-	}
-	.portfolio {
-		display: none;
-	}
-	.contact {
-		display: none;
-	}
-}
 
 @media (min-width: 768px) {
 	h1 {

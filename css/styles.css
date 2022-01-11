@@ -114,13 +114,15 @@ body h1 {
 .contact {
 	display: none;
 }
+.skills-nav {
+	display: none;
+}
 
 /* ---- Layout Containers ---- */
 .title, .main {
     background-color: #ffffff;
     padding: 10px 10px;
 	font-size: 1em;
-	
 }
 
 .profile-image {
@@ -253,7 +255,7 @@ ul.skills {
 	 .top {
 		 display: none;
 	 }
-	 .home, .portfolio, .contact, .footer-nav {
+	 .home, .portfolio, .contact, .footer-nav, .skills-nav {
 		display: flex;
 		flex-direction: column;
 	}
